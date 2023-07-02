@@ -11,7 +11,7 @@ import numpy as np
 # In[2]:
 
 
-train=pd.read_csv(r'C:\Users\naveen chauhan\Desktop\mldata\loan prediction\train.csv')
+train=pd.read_csv(r'C:\Users\krishna srinivasan\Desktop\mldata\loan prediction\train.csv')
 train.Loan_Status=train.Loan_Status.map({'Y':1,'N':0})
 train.isnull().sum()
 
@@ -21,7 +21,7 @@ train.isnull().sum()
 
 Loan_status=train.Loan_Status
 train.drop('Loan_Status',axis=1,inplace=True)
-test=pd.read_csv(r'C:\Users\naveen chauhan\Desktop\mldata\loan prediction\test.csv')
+test=pd.read_csv(r'C:\Users\krishna srinivasan\Desktop\mldata\loan prediction\test.csv')
 Loan_ID=test.Loan_ID
 data=train.append(test)
 data.head()
